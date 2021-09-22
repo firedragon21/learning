@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"></meta>
+<title>css 選擇器介紹</title>
+<style type="text/css">
+body{
+	font-size:16px;font-family:"微軟正黑體"
+
+}
+h3{
+	font-size:24px;text-decoration:underline;
+	
+}
+div.content{
+	padding:10px;border:1px	dashed #888888;
+}
+#btn{
+	border:1px solid #888888;
+	background-color:#ffffff;padding:5px;
+}
+/* :hover 虛擬選擇器 */
+#btn:hover{
+	background-color:#888888;
+}
+input:focus{
+	border:3px solid #ff0000;	
+}
+.favorite a{
+	color:#0000ff;
+}
+.used a{
+	color:#008800;
+}
+
+</style>
+</head>
+<body>
+	<h3>我的自我介紹</h3>
+	<div class="content">
+		大家好，我是林承東。
+	</div>
+	<h3>我的最愛連結</h3>
+	<ul class="favorite">
+		<li><a href="https://www.facebook.com/">Facebook</a></li>
+	</ul>
+	<h3>常用連結</h3>
+	<ul class="used">
+		<li><a href="https://www.ptt.cc/bbs/index.html">PTT</a></li>
+		<li><a href="https://www.youtube.com">yt</a></li>
+		
+	</ul>
+	<h3>和我聯絡</h3>
+	<div class="content">
+		填寫訊息 <input type="text" /> <button id="btn">送出</button>
+	</div>
+</body>
+</html>

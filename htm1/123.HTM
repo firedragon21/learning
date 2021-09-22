@@ -1,0 +1,36 @@
+
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="forms" action="" method="post">
+        帳號：<input id="username" name="username" /><br />
+        密碼：<input id="pwd" type="password" name="pws" />
+        <input id="btn1" type="button" value="顯示密碼" />
+    </form>
+   
+</body>
+<script>
+    window.onload = function () {
+        var pwd = document.getElementById('pwd');
+        var btn = document.getElementById('btn1');
+        var showHide = true;
+        btn.onclick = function () {
+            if (showHide) {
+                pwd.type = 'text';
+                showHide = false;
+                btn.value = '隱藏密碼';
+            }
+            else {
+                pwd.type = 'password';
+                showHide = true;
+                btn.value = '顯示密碼';
+            }
+        }
+    }
+</script>
+</html>

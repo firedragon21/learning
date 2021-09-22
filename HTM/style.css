@@ -1,0 +1,37 @@
+body{margin:0px;}
+nav{
+	display:flex;
+}
+nav>.logo{
+	flex:none;width:100px;
+	background-color:#ffcccc;
+}	
+nav>.menu{
+	flex:auto;
+	background-color:#ccccff;
+}
+nav>.user{
+	flex:none;width:100px;
+	background-color:#ccffcc;
+}
+main{ /*容器*/
+	display:flex;flex-wrap:wrap; /*掉下來*/
+	background-color:#cccccc;
+	justify-content:center; /*靠左靠中靠右*/
+	align-items:center;
+}
+main>.item{   /*項目*/
+	flex:none;
+	width:270px;margin:10px;
+	background-color:#ffcccc;
+}
+@media (max-width:1200px){
+	main>.item{
+		width:45%;
+	}
+}
+@media (max-width:500px){
+	main>.item{
+		width:90%; /*寬度設定90%=會掉行*/
+	}
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"></meta>
+<title>Javascript</title>
+<script tpye="text/javascript">
+function change(){
+	var spanObj=window.document.getElementById("emotion");
+	spanObj.innerHTML="bad";
+	spanObj.style.color="red";
+}
+	
+</script>
+</head>
+<body>
+	<div>
+		Today is a <span id="emotion">good</span> day.Let's go to play basketball.
+	</div>
+	<button onclick="change();">Change</button>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>事情處理</title>
+<script type="text/javascript">
+function init(){
+	var btn=document.getElementById("btn");
+	/*btn.onclick=function(){
+		alert("Clicked");
+	};
+	*/
+	var handler=function(){
+		alert("Clicked");
+		
+	
+	};
+	btn.addEventListener("click",handler);對應的處理器
+
+}
+</script>
+</head>
+<body onload="init();">
+	<button  id="btn" >Click</button>
+	
+</body>
+</html>

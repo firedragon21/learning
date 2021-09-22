@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>html 選單開合</title>
+<script type="text/javascript">
+function toggleMenu(number){
+	var menu=document.getElementById("menu-"+number);
+	menu.classList.toggle("hide");
+	}
+	/*
+	menu.style.display=="none"){
+	menu.style.display="block";
+	}
+	else{
+		menu.style.display="none";
+	}
+	*/
+
+
+
+
+</script>
+<style type="text/css">
+	.hide{display:none;}
+</style>
+</head>
+<body>
+	<div onclick="toggleMenu(1);"><button>男士衣服</button></div>
+	<ul id="menu-1" class="hide">
+		<li>短袖 1-1</li>
+		<li>長袖 1-2</li>
+		<li>背心 1-3</li>
+	</ul>
+	<div onclick="toggleMenu(2);"><button>衣服</button></div>
+	<ul id="menu-2" class="hide">
+		<li>短袖 2-1</li>
+		<li>長袖 2-2</li>
+		<li>背心 2-3</li>
+	</ul>
+	<div onclick="toggleMenu(3);"><button>男士衣服</button></div>
+	<ul id="menu-3" class="hide">
+		<li>短袖 3-1</li>
+		<li>長袖 3-2</li>
+		
+	</ul>
+	
+</body>
+</html>

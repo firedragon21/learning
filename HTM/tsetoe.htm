@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>html TEST</title>
+<script type="text/javascript">
+function toggleMenu(){
+	var menu=document.getElementById("menu");
+	menu.classList.toggle("hide");
+	/*if(menu.style.display=="none"){
+		menu.style.display="block";
+	}
+	else{
+		menu.style.display="none";
+	}
+	*/
+}
+</script>
+<style type="text/css">
+.hide{display:none;}
+</style>
+</head>
+<body>
+	<div onclick="toggleMenu(1);">男士衣服</div>
+	<ul id="menu" class="hide">
+		<li>短袖 1-1</li>
+		<li>長袖 1-2</li>
+		<li>背心 1-3</li>
+	</ul>
+	
+	
+	
+</body>
+</html>

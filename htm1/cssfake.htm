@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style type="text/css">
+    .box1{
+        position: relative;
+        margin-top:100PX;
+        width: 50px;
+        height: 50px;
+        background: black;
+    }
+    .box1::before{
+        position: absolute;
+        content:'樂';
+        width: 50px;
+        bottom:0;
+        height: 0px;
+        background: rgb(182, 25, 51);
+        transition: height 0.5s;
+        z-index: 4;
+        left: 80px;
+    }
+    .box1::after{
+        content:'快';
+        bottom:0;
+        position: absolute;
+        width: 50px;
+        height: 0px;
+        background: rgb(216, 116, 22);
+        z-index: 3;
+        left: 80px;
+    }
+    .box1:hover::after{
+        height:60px;
+
+    }
+    .box1:hover::before{
+        height: 30px;
+    }
+    .box2{
+        width: 50px;
+        height: 50px;
+
+    }
+    .box2::before {
+        position: absolute;
+        content: '年';
+        width: 50px;
+        height: 0px;
+        background: rgb(201, 214, 18);
+        bottom: 0;
+        left: 80px;
+        transition: height 0.5s;
+        z-index: 2;
+    }
+
+    .box2:hover::before {
+        height: 90px;
+    }
+
+    .box2::after {
+        position: absolute;
+        content: '新';
+        width: 50px;
+        height: 0px;
+        background: rgb(101, 228, 27);
+        bottom: 0;
+        left: 80px;
+        transition: height 0.5s;
+        z-index: 1;
+    }
+
+    .box2:hover::after {
+        height: 120px;
+    }
+
+</style>
+<title>html TEST</title>
+<script type="text/javascript">
+
+</script>
+
+</head>
+<body>
+	<div class="box1">
+        <div class="box2"></div>
+    </div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>串接API測試</title>
+</head>
+<body>
+   
+</body>
+<script>
+    var dataUrl= "https://datacenter.taichung.gov.tw/swagger/yaml/387220000A" //// 1.設一個變數把API的URL存起來
+var xhr = new XMLHttpRequest()  // 2.new一個XMLHttpRequest物件(以此物件的方法進行資料請求) 
+xhr.open('GET',dataUrl, true) //get方法開啟一個請求
+xhr.send() //送出請求
+xhr.onload = function(){  // 5-1 或直接用 onload => 資料接收/送出成功後執行的function
+    var data = JSON.parse(this.responseText);
+    console.log(data);
+}
+</script>
+</html>
+
+
+
+
